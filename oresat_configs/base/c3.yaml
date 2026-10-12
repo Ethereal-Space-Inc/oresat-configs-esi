@@ -84,7 +84,7 @@ objects:
         data_type: uint16
         description: timeout before trying to deploy the antennas
         access_type: const
-        default: 3600  # 1 hour
+        default: 7200  # 1 hour
         unit: s
 
       - subindex: 0x4
