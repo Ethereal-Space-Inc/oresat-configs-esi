@@ -976,6 +976,12 @@ objects:
         description: is the payload service enabled or is it disabled for leop/etc.
         access_type: rw
         default: true
+      - subindex: 0x3
+        name: file_register
+        data_type: str
+        description: the file to send to the OSIRIS instrument if the instrument exists.
+        access_type: rw
+        default: ""
 
 
 tpdos:
