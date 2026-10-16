@@ -41,7 +41,10 @@ class MissionConsts:
         base = resources.files(paths)
         object.__setattr__(self, "cards", base / "cards.csv")
         object.__setattr__(self, "beacon", base / "beacon.yaml")
-        object.__setattr__(self, "leop_beacon", base / "leop_beacon.yaml")
+        if self.id > 100:
+            object.__setattr__(self, "leop_beacon", base / "leop_beacon.yaml")
+        else:
+            object.__setattr__(self, "leop_beacon", base / "beacon.yaml")
         for path in base.iterdir():
             if path.name.endswith("_overlay.yaml"):
                 card = path.name.rsplit(sep="_", maxsplit=1)[0]

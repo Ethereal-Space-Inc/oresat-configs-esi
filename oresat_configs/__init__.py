@@ -49,9 +49,11 @@ class OreSatConfig:
 
         with as_file(self.mission.beacon) as path:
             beacon_config = BeaconConfig.from_yaml(path)
-        if self.mission.id > 100:
+        if self.mission.leop_beacon is not None:
             with as_file(self.mission.leop_beacon) as path:
                 leop_beacon_config = BeaconConfig.from_yaml(path)
+        else:
+            leop_beacon_config = beacon_config
         with as_file(self.mission.cards) as path:
             self.cards = cards_from_csv(path)
         self.configs = _load_configs(self.cards, self.mission.overlays)

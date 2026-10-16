@@ -64,13 +64,13 @@ objects:
         data_type: bool
         description: rs_enabled
         access_type: rw
-        default: 1
+        default: true
       - subindex: 0x8
         name: scrambler_enabled
         data_type: bool
         description: scrambler_enabled
         access_type: rw
-        default: 1
+        default: true
       - subindex: 0x9
         name: alpha
         data_type: float32  # called real32 in the spec.
@@ -218,13 +218,13 @@ objects:
         data_type: bool
         description: rs_enabled
         access_type: rw
-        default: 1
+        default: true
       - subindex: 0x8
         name: scrambler_enabled
         data_type: bool
         description: scrambler_enabled
         access_type: rw
-        default: 1
+        default: true
       - subindex: 0x9
         name: alpha
         data_type: float32  # called real32 in the spec.
@@ -284,11 +284,11 @@ objects:
         description: running_status
         access_type: ro
 
-  - index: 0x4009
-    name: tx_speedy_transfer
-    data_type: domain
-    description: no clue
-    access_type: wo
+  # - index: 0x4009
+  #   name: tx_speedy_transfer
+  #   data_type: domain
+  #   description: no clue
+  #   access_type: wo
 
   - index: 0x400A
     name: config_persist
@@ -310,8 +310,8 @@ objects:
     description: rx_data
     access_type: ro
 
-  - index: 0x4011
-    name: rx_data
-    data_type: domain
-    description: rx_speedy_transfer
-    access_type: ro
+  # - index: 0x4011
+  #   name: rx_data
+  #   data_type: domain
+  #   description: rx_speedy_transfer
+  #   access_type: ro

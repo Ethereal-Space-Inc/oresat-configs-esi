@@ -84,7 +84,7 @@ objects:
         data_type: uint16
         description: timeout before trying to deploy the antennas
         access_type: const
-        default: 3600  # 1 hour
+        default: 7200  # 1 hour
         unit: s
 
       - subindex: 0x4
@@ -672,7 +672,7 @@ objects:
         data_type: float32
         description: the orbital period, in seconds
         access_type: rw
-        default: 5680
+        default: 5680.0
         unit: s
 
       - subindex: 0x5
@@ -976,6 +976,12 @@ objects:
         description: is the payload service enabled or is it disabled for leop/etc.
         access_type: rw
         default: true
+      - subindex: 0x3
+        name: file_register
+        data_type: str
+        description: the file to send to the OSIRIS instrument if the instrument exists.
+        access_type: rw
+        default: ""
 
 
 tpdos:
