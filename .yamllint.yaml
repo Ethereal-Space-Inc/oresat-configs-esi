@@ -9,6 +9,9 @@ ignore: |
   oresat_configs/prism/leop_beacon.yaml
   oresat_configs/osiris_b1/beacon.yaml
   oresat_configs/osiris_b1/leop_beacon.yaml
+  oresat_configs/osiris_c/leop_beacon.yaml
+  oresat_configs/osiris_d/leop_beacon.yaml
+  oresat_configs/qvoyager/leop_beacon.yaml
 
 rules:
   document-start: disable
