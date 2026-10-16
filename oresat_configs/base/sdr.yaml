@@ -70,7 +70,7 @@ objects:
         data_type: bool
         description: scrambler_enabled
         access_type: rw
-        default: 1
+        default: true
       - subindex: 0x9
         name: alpha
         data_type: float32  # called real32 in the spec.
@@ -218,13 +218,13 @@ objects:
         data_type: bool
         description: rs_enabled
         access_type: rw
-        default: 1
+        default: true
       - subindex: 0x8
         name: scrambler_enabled
         data_type: bool
         description: scrambler_enabled
         access_type: rw
-        default: 1
+        default: true
       - subindex: 0x9
         name: alpha
         data_type: float32  # called real32 in the spec.
