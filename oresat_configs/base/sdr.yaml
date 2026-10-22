@@ -144,7 +144,7 @@ objects:
         access_type: ro
       - subindex: 0x2
         name: idle_packets
-        data_type: uint64
+        data_type: uint32
         description: idle packets
         access_type: ro
       - subindex: 0x3
@@ -154,7 +154,7 @@ objects:
         access_type: ro
       - subindex: 0x4
         name: rx_packets
-        data_type: uint64
+        data_type: uint32
         description: rx_packets
         access_type: ro
       - subindex: 0x5
@@ -164,7 +164,7 @@ objects:
         access_type: ro
       - subindex: 0x6
         name: tx_packets
-        data_type: uint64
+        data_type: uint32
         description: tx_packets
         access_type: ro
       - subindex: 0x7
