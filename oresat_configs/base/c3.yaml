@@ -958,6 +958,11 @@ objects:
         data_type: uint8
         description: current status of the sband radio
         access_type: ro
+      - subindex: 0x5
+        name: reset
+        data_type: bool
+        description: write anything to this index to reset the sband
+        access_type: wo
 
   - index: 0x4120
     name: payload_ctrl
@@ -1062,3 +1067,4 @@ fram:
   - [edl, cfdp_seq_num]
   - [payload_ctrl, enabled]
   - [payload_ctrl, state]
+  - [beacon, leop]

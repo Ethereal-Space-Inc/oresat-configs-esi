@@ -284,11 +284,11 @@ objects:
         description: running_status
         access_type: ro
 
-  # - index: 0x4009
-  #   name: tx_speedy_transfer
-  #   data_type: domain
-  #   description: no clue
-  #   access_type: wo
+  - index: 0x4009
+    name: tx_speedy_transfer
+    data_type: domain
+    description: no clue
+    access_type: wo
 
   - index: 0x400A
     name: config_persist
@@ -303,6 +303,18 @@ objects:
     description: tx_send_cache
     access_type: wo
     default: 1
+
+  - index: 0x400C
+    name: beacon_data
+    data_type: domain
+    description: no clue
+    access_type: wo
+
+  - index: 0x400E
+    name: sdo_block_size
+    data_type: uint8
+    description: sdo_block_size
+    access_type: rw
 
   - index: 0x4010
     name: rx_data
