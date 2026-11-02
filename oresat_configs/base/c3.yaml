@@ -987,6 +987,11 @@ objects:
         description: the file to send to the OSIRIS instrument if the instrument exists.
         access_type: rw
         default: ""
+      - subindex: 0x4
+        name: downlink_now
+        data_type: bool
+        description: Write any value to this index to begin the automated sdr downlink.
+        access_type: wo
 
 
 tpdos:
