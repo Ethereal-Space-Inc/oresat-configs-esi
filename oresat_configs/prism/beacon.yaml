@@ -20,6 +20,7 @@ fields:
   - [system, unix_time]
   - [system, power_cycles]
   - [system, storage_percent]
+  - [edl, scid]
   - [uhf, rx_bytes]
   - [uhf, rx_packets]
   - [uhf, rssi]

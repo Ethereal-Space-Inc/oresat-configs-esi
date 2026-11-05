@@ -321,6 +321,13 @@ objects:
         default: 1000
         unit: ms
 
+      - subindex: 0x1f
+        name: scid
+        data_type: uint16
+        description: USLP spacecraft identifier
+        access_type: ro
+        default: 20307 # OS in ascii
+
   - index: 0x4009
     name: opd
     object_type: record
@@ -1073,3 +1080,4 @@ fram:
   - [payload_ctrl, enabled]
   - [payload_ctrl, state]
   - [beacon, leop]
+  - [edl, scid]

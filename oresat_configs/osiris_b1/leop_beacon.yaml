@@ -3,7 +3,7 @@ revision: 0
 ax25:
   dest_callsign: SPACE
   dest_ssid: 0  # primary station
-  src_callsign: ESIOSR
+  src_callsign: ESIOSL
   src_ssid: 11  # balloons, aircraft, spacecraft, etc
   control: 0x3  # ui-frame
   pid: 0xf0  # no L3 protocol
@@ -19,6 +19,7 @@ fields:
   - [system, uptime]
   - [system, unix_time]
   - [system, power_cycles]
+  - [edl, scid]
   - [uhf, rx_bytes]
   - [uhf, rx_packets]
   - [uhf, rssi]
