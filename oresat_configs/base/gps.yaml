@@ -218,7 +218,8 @@ tpdos:
       - [time_syncd]
     event_timer_ms: 1000
 
-  - num: 16  # the time sync TPDO
+  - num: 8  # the time sync TPDO
     fields:
       - [scet]
-    sync: 1
+    event_timer_ms: 1000
+    #sync: 1
