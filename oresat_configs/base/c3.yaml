@@ -922,7 +922,7 @@ objects:
         name: active
         data_type: bool
         description: is the gps recording active?
-        default: false
+        default: true
       - subindex: 0x5
         name: active_timeout
         data_type: uint32
@@ -1081,3 +1081,4 @@ fram:
   - [payload_ctrl, state]
   - [beacon, leop]
   - [edl, scid]
+  - [mdb, active]
