@@ -327,3 +327,25 @@ objects:
   #   data_type: domain
   #   description: rx_speedy_transfer
   #   access_type: ro
+
+tpdos:
+  - num: 1
+    fields:
+      - [tx_data_statistics, idle_packets]
+      - [tx_data_statistics, tx_packets]
+
+  - num: 2 # never used, but i'm putting this here so we don't complain about it being missing.
+    fields:
+      - [rx_data_statistics, idle_packets]
+      - [rx_data_statistics, rx_packets]
+
+  - num: 3
+    fields:
+      - [sensor_data, temperature_die]
+      - [sensor_data, temperature_board]
+
+  - num: 4
+    fields:
+      - [sensor_data, vcc_int_mv]
+      - [sensor_data, vcc_aux_mv]
+      - [sensor_data, vcc_bram_mv]
